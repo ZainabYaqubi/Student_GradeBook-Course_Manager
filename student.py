@@ -10,3 +10,22 @@ class student:
 
     def get_name(self):
         return self.__name
+
+    def set_email(self, n_email):
+        if "@" and "." in self.n_email:
+            self.n_email = n_email
+            return True
+        else:
+            return False
+
+    def enroll_course(self, course_code):
+        if course_code not in self.courses:
+            self.courses.append(course_code)
+            return True
+        return False
+
+    def display_info(self):
+        print(f"Student ID: {self.__student_id}")
+        print(f"Student Name: {self.__name}")
+        print(f"Email: {self.email}")
+        print(f"Enrolled Courses: {self.courses}")
