@@ -1,4 +1,4 @@
-class student:
+class Student:
     def __init__(self, student_id, name, email, courses):
         self.__student_id = student_id
         self.__name = name
@@ -12,8 +12,8 @@ class student:
         return self.__name
 
     def set_email(self, n_email):
-        if "@" and "." in self.n_email:
-            self.n_email = n_email
+        if "@" in n_email and "." in n_email:
+            self.email = n_email
             return True
         else:
             return False
