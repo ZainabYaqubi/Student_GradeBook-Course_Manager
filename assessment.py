@@ -12,7 +12,7 @@ class Assessment:
         if percentage >= 60:
             return f"Good Work!! Your result is {percentage:.1f}%."
         else:
-            return f"Ty Hard... You failed. Your result is {percentage:.1f}%."
+            return f"Try Hard... You failed. Your result is {percentage:.1f}%."
 
     def display_info(self):
         print(f"Title: {self.title}")
