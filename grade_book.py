@@ -14,7 +14,7 @@ class GradeBook:
 
     def enroll_student(self, student_id, course_code):
         if student_id in self.students and course_code in self.courses:
-            self.students[student_id].enroll(course_code)
+            self.students[student_id].enroll_course(course_code)
             self.courses[course_code].add_student(student_id)
             return True
         return False
@@ -99,5 +99,3 @@ class GradeBook:
 
         else:
             return "F"
-
-    
